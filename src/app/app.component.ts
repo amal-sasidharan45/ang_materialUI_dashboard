@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang_material_ui';
+  sidebar:boolean=false
+  sidebartoggle(){
+    this.sidebar=!this.sidebar
+
+
+
+  }
 }

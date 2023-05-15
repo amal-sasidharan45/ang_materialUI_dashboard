@@ -1,0 +1,28 @@
+
+  <mat-toolbar class="bg-cyan-950">
+    <button (click)="menuiconClick()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon class=" text-amber-400 mt-2 ">menu</mat-icon>
+    </button>
+    <span class=" text-amber-400 ms-3">Product Manager Dashboard</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon m-4 text-amber-400" aria-label="Example icon-button with heart icon">
+      <mat-icon>build</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon m-4 text-amber-400" aria-label="Example icon-button with share icon">
+   
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button class="text-amber-400" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"> 
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        SignOut
+      </button>
+  
+   
+    </mat-menu>
+    
+  </mat-toolbar>
+
